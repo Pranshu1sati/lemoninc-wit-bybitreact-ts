@@ -22,7 +22,7 @@ const AddProducts = () => {
   // const [combinationsArr, setcombinationsArr] = useState<string[]>([]);
 
   const form = useForm<Product>({
-    mode: "onChange",
+    mode: "onTouched",
     resolver: zodResolver(productSchema),
     defaultValues: {
       name: "",
