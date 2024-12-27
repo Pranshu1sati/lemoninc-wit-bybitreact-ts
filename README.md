@@ -61,7 +61,7 @@ React Hook Form simplifies form handling by leveraging uncontrolled components a
 
 In the Product form schema is defined as:
 
-```tsx
+
 
 
 productSchema = {
