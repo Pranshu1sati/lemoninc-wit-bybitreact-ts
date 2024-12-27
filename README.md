@@ -146,4 +146,4 @@ await fetch("https://api.cloudinary.com/v1_1/{cloud_name}/image/upload", {
    - Replace `{cloud_name}` with your Cloudinary cloud name in the API URL.
 
 3. **Handle Response**:
-   - Parse the JSON response to get the uploaded image URL and update the form state.
+   - Parse the JSON response to get the uploaded image URL and update the form state. Storing this value in the zustand store for image url
