@@ -55,20 +55,4 @@ export const productSchema = z.object({
   }),
 });
 
-export function generateRandomCombination() {
-  // Generate 2 random numbers between 0 and 9
-  const randomNumbers =
-    Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10);
 
-  // Generate 3 random alphabets (both uppercase and lowercase)
-  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-  let randomAlphabets = "";
-
-  for (let i = 0; i < 3; i++) {
-    const randomIndex = Math.floor(Math.random() * alphabet.length);
-    randomAlphabets += alphabet[randomIndex];
-  }
-
-  // Combine them to return the result
-  return randomNumbers + randomAlphabets;
-}
